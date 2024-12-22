@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Forum</title>
+  <link rel="stylesheet" href="../css/eforum.css">
+</head>
+<body>
+  <header>
+    <h1>Open Forum</h1>
+    <nav>
+      <span id="loggedInUser">Logged in as: <strong>Anonymous</strong></span>
+      <button id="loginBtn">Login</button>
+      <button id="signupBtn">Sign Up</button>
+    </nav>
+  </header>
+  <main>
+    <section id="postSection">
+      <form id="postForm">
+        <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+        <button type="submit">Post</button>
+      </form>
+    </section>
+    <section id="posts">
+      <!-- Posts will be dynamically added here -->
+    </section>
+  </main>
+  <script src="../js/eforum.js"></script>
+</body>
+</html>

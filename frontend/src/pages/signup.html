@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="../css/signup.css"> <!-- Link to CSS file -->
+    
+</head>
+<body>
+    <div class="registration-container">
+        <h1>Registration Form</h1>
+        <form id="registrationForm" action="#" method="post" enctype="multipart/form-data">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <!-- ID Field -->
+            <div class="form-group">
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <!-- E-Mail ID Field -->
+            <div class="form-group">
+                <label for="email">E-Mail ID:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Age Field -->
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="100" required>
+            </div>
+
+            <!-- Gender Field (Radio Button) -->
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <!-- College Address (Text Area) -->
+            <div class="form-group">
+                <label for="address">College Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+            <!-- Branch (Select-Option Group) -->
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <select id="branch" name="branch" required>
+                    <option value="" disabled selected>Select your branch</option>
+                    <option value="CSE">Computer Science Engineering</option>
+                    <option value="ECE">Electronics & Communication Engineering</option>
+                    <option value="ME">Mechanical Engineering</option>
+                    <option value="CE">Civil Engineering</option>
+                </select>
+            </div>
+
+            <!-- Technical Skills (Checkbox) -->
+            <div class="form-group">
+                <label>Technical Skills:</label>
+                <input type="checkbox" id="skill-c" name="skills" value="C">
+                <label for="skill-c">C</label>
+                <input type="checkbox" id="skill-java" name="skills" value="Java">
+                <label for="skill-java">Java</label>
+                <input type="checkbox" id="skill-python" name="skills" value="Python">
+                <label for="skill-python">Python</label>
+                <input type="checkbox" id="skill-jsp" name="skills" value="JSP">
+                <label for="skill-jsp">JSP</label>
+            </div>
+
+            <!-- Resume Upload (File) -->
+            <div class="form-group">
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <!-- Photo Upload (File) -->
+            <div class="form-group">
+                <label for="photo">Upload Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*" required>
+            </div>
+
+            <!-- Submit and Reset Buttons -->
+            <div class="form-group">
+                <button type="button" onclick="validateForm()">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/signip.js"></script>
+</body>
+</html>

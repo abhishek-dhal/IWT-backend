@@ -1,0 +1,100 @@
+
+        /* Add some global styles to ensure proper layout */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light background color */
+        }
+
+        .registration-container {
+            width: 100%;
+            max-width: 800px;  /* Increased max width for more space */
+            padding: 40px;
+            box-sizing: border-box;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;  /* Adjust this margin to make sure it doesn't get cut off */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333; /* Dark text for better readability */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555; /* Darker labels for better contrast */
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .form-group button[type="reset"] {
+            background-color: #f44336;
+        }
+
+        .form-group button:hover {
+            opacity: 0.9;
+        }
+
+        .form-group input[type="file"] {
+            border: none;
+            padding: 8px;
+        }
+
+        .form-group input[type="radio"] {
+            margin-right: 15px;
+        }
+
+        /* Adding some responsive behavior */
+        @media (max-width: 900px) {
+            .registration-container {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .registration-container {
+                padding: 20px;
+                width: 100%;
+            }
+
+            .form-group input,
+            .form-group textarea,
+            .form-group select,
+            .form-group button {
+                font-size: 14px;
+            }
+        }
+  
